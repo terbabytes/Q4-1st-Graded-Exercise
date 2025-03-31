@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width", initial-scale=1>
+  <meta name="author" content="Tara Laraine Pablo">
+  <meta name="description" content=" ">
+  <meta name="keywords" content="">
+  <title>Pablo - CS 3 </title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="stylehappy.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="">
+</head>
+
+<body class="w3-container w3-auto">
+  <div class="w3-bar w3-black">
+    <a href="/" class="w3-bar-item w3-button w3-mobile">Home</a>
+    <a href="/happy" class="w3-bar-item w3-button w3-mobile">Happy</a> 
+  </div>
+
+  <header class="w3-container" id="header" > 
+    <h1>TARA PABLO- 9-SR - MARCH 2025</h1>
+    <h2> BIRTHDAY </h2>
+  </header>
+
+  <section class="w3-container" id="input"> 
+    <h2>OUTPUT</h2>
+    <div class="w3-card w3-padding w3-margin">
+      {{#each formData}}
+        <p><strong>{{@key}}:</strong> {{this}}</p>
+      {{/each}}
+    </div>
+
+    <h2>HAPPY BIRTHDAY SONG</h2>
+    <div class="w3-card w3-padding w3-margin">
+      <p><strong>Nickname:</strong> {{name}}</p>
+      <p><strong>Gender:</strong> {{gender}}</p>
+      <p><strong>Number of Close Friends/Family:</strong> {{number}}</p>
+
+      <h3>GUESTS:</h3>
+      <ul>
+        {{#each guests}}
+          <li>{{guestName}} - {{#if isGoing}}Attending{{else}}Not Attending{{/if}}</li>
+        {{/each}}
+      </ul>
+
+      <h3>SONG:</h3>
+      <ul>
+        {{#each song}}
+          <li>{{singer}}: {{word}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+
+  <footer class="w3-container ">
+    <p> &copy; 2024 CS3 Teachers </p>
+  </footer>
+</body>
+</html>

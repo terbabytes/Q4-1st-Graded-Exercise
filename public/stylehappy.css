@@ -1,0 +1,68 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: arial, san-serif;
+    background-image: url('images/mwbg.jpg');
+    background-size: 100% 100%;
+    background-repeat: cover;
+    background-position: center;
+    color: royalblue
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: mw;
+  }
+  
+  .w3-container {
+background-color:rgba(39,0,0,0.8);
+color: #32c8db
+  }
+  th,
+  td {
+    border: solid;
+    border-width: 1px;
+    padding: 10px;
+  }
+  
+  
+  #header {
+    border: 1px solid #c3b7a7;
+    padding: 20px;
+  }
+  
+  #input {
+    border: 1px solid #c3b7a7;
+    padding: 20px;
+  }
+  
+  #output {
+    border: 1px solid #c3b7a7;
+    padding: 20px;
+    overflow: scroll;
+    background-color: #cba54b;
+    color: white;
+  }
+  
+  
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+
+  @font-face {
+    font-family: mw;
+    src: url(public/constan.ttf);
+  }
